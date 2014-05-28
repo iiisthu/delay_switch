@@ -1,3 +1,4 @@
+//init xgbe link used
 #ifndef PORT_HEADER
 #define PORT_HEADER
 #include <gxio/mpipe.h>
@@ -12,12 +13,12 @@ struct PORT
 	gxio_mpipe_iqueue_t** iqueues;
 	gxio_mpipe_equeue_t *equeue;
 	gxio_mpipe_equeue_t  equeue_body;
-	int cpu_in[WORKER_NUM];
-	int cpu_out;
-	int in_num[WORKER_NUM];
-	int out_num;
-	int num_workers;
-	unsigned char mac[6];
+	int cpu_in[WORKER_NUM];//the cpu index of thread to match flow table
+	int cpu_out;//the cpu index of thread to send out packet
+	int in_num[WORKER_NUM];//count the packets handled by the match-in thread
+	int out_num;//count the packets sent out by the  send-out cpu
+	int num_workers;//cpu number used to match input packets 
+	unsigned char mac[6];//the mac address of the port
 };
 void init_port(struct PORT * port,char * name,unsigned char * mac,int num_workers);
 void init_all_ports();

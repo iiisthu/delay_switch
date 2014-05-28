@@ -1,3 +1,4 @@
+//send out ring
 #ifndef SEND_RING_HEADER
 #define SEND_RING_HEADER
 #include "queue.h"

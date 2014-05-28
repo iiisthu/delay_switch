@@ -1,3 +1,4 @@
+//system tick thread
 #ifndef TICK_HEADER 
 #define TICK_HEADER 
 

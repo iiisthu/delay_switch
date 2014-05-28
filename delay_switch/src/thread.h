@@ -1,3 +1,4 @@
+//init and create all working thread
 #ifndef THREAD_HEADER
 #define THREAD_HEADER
 #include "port.h" 

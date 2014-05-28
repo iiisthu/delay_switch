@@ -1,3 +1,4 @@
+//use to store the packets to send out
 #ifndef QUEUE_HEADER 
 #define QUEUE_HEADER 
 
