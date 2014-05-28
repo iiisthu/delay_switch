@@ -1,0 +1,3 @@
+/src:contain the source code of the delay switch
+/build:make file and the script run on platform
+/recv /send:send test packet
