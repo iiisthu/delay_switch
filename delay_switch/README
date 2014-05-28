@@ -1,3 +1,5 @@
-/src:contain the source code of the delay switch
-/build:make file and the script run on platform
-/recv /send:send test packet
+#instruction for each dir
+/src:contain the source code of the delay switch,each *.h file contains help information of the function of the *.h *.c
+/build:porject makefile and the script used to run on platform
+/recv /send:send test packet program and src
+
